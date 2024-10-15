@@ -1,0 +1,222 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FEU Buildings</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico.png">
+</head>
+
+    <div class="container">
+        <span class="slider" id="slider1"></span>
+        <span class="slider" id="slider2"></span>
+        <span class="slider" id="slider3"></span>
+        <span class="slider" id="slider4"></span>
+        <span class="slider" id="slider5"></span>
+        <span class="slider" id="slider6"></span>
+        <span class="slider" id="slider7"></span>
+
+        <div class="imgContainer">
+
+           <div class="slide_div" id="slide_1">
+            <img src="bldg.jpg" alt="" class="img" id="img1">
+            <a href="#slider1" class="button" id="button1"></a>
+			<div class="bottom-right">Architecture and Fine Arts Building</div>
+           </div>
+		   
+           <div class="slide_div" id="slide_2">
+            <img src="Annex-N1.JPG" alt="" class="img" id="img2">
+            <a href="#slider2" class="button" id="button2"></a>
+			<div class="bottom-right">Admissions Building</div>
+           </div>
+           <div class="slide_div" id="slide_3">
+            <img src="Chapel-1.JPG" alt="" class="img" id="img3">
+            <a href="#slider3" class="button" id="button3"></a>
+			<div class="bottom-right">FEU Chapel</div>
+           </div>
+           <div class="slide_div" id="slide_4">
+            <img src="NRH.JPG" alt="" class="img" id="img4">
+            <a href="#slider4" class="button" id="button4"></a>
+			<div class="bottom-right">Nicanor Reyes Hall Sr building</div>
+           </div>
+           <div class="slide_div" id="slide_5">
+            <img src="Science-Building-photo-2-Copy.jpg" alt="" class="img" id="img5">
+            <a href="#slider5" class="button" id="button5"></a>
+			<div class="bottom-right">Science Building</div>
+           </div>
+           <div class="slide_div" id="slide_6">
+            <img src="Admin-Building.JPG" alt="" class="img" id="img6">
+            <a href="#slider6" class="button" id="button6"></a>
+			<div class="bottom-right">FEU Administration Building</div>
+           </div>
+           <div class="slide_div" id="slide_7">
+            <img src="feum.jpg" alt="" class="img" id="img7">
+            <a href="#slider7" class="button" id="button7"></a>
+			<div class="bottom-right">Freedom Park</div>
+           </div>
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>
+
+<style>
+
+.bottom-right {
+  position: fixed;
+  display: flex;
+    align-items: bottom;
+    justify-content: bottom;
+    margin: 0 30px 0 30px;
+	color: white;
+	font-weight: bold;
+	
+  }
+  
+body{
+    width: 11%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color:#286A4D;
+}
+
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+  width: 50%;
+  max-width: 300px;
+}
+
+.imgContainer{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slide_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+
+
+
+img{
+    position: relative;
+    height: 370px;
+    width: 240px;
+    filter: saturate(10%);
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button{
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider1:target ~ .imgContainer #img1,
+#slider1:target ~ .imgContainer #button1{
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider2:target ~ .imgContainer #img2,
+#slider2:target ~ .imgContainer #button2{
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider3:target ~ .imgContainer #img3,
+#slider3:target ~ .imgContainer #button3{
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider4:target ~ .imgContainer #img4,
+#slider4:target ~ .imgContainer #button4{
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider5:target ~ .imgContainer #img5,
+#slider5:target ~ .imgContainer #button5{
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider6:target ~ .imgContainer #img6,
+#slider6:target ~ .imgContainer #button6{
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider7:target ~ .imgContainer #img7,
+#slider7:target ~ .imgContainer #button7{
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+
+#slider1:target ~ .imgContainer{
+    left: 60%;
+}
+#slider2:target ~ .imgContainer{
+    left: 40%;
+}
+#slider3:target ~ .imgContainer{
+    left: 20%;
+}
+#slider4:target ~ .imgContainer{
+    left: 0%;
+}
+#slider5:target ~ .imgContainer{
+    left: -20%;
+}
+#slider6:target ~ .imgContainer{
+    left: -40%;
+}
+#slider7:target ~ .imgContainer{
+    left: -60%;
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Far Eastern University Website</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico.png">
+</head>
+<body>
+    <header>
+        <a href="https://www.feu.edu.ph/" class="logo">Far Eastern University</a>
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="https://www.feu.edu.ph/registrar-services/" >Services</a>
+            <a href="https://www.facebook.com/feuhighschoolofficial?mibextid=LQQJ4d" >Updates</a>
+            <a href="https://www.feu.edu.ph/institute-of-education-learning-packets/" >Education</a>
+            <a href="https://www.feu.edu.ph/about/the-story-of-feu/" >Experience</a>
+            <a href="https://www.feu.edu.ph/quick-info/" >Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="favicon.ico.png" alt="">
+        </div>
+        <div class="home-content">
+            <br><br><br><br><h1>Hello, Welcome to <span>FEU</span></h1>
+            <h3 class="typing-text">we are <span></span></h3>
+           <b> <p>Situated in Sampaloc, Manila, is the Far Eastern University, abbreviated as FEU, 
+		   which was established by Dr. Nicanor Reyes, Jr. in June 1928. It is, however, more than just a school;
+		   it is a place where dreams are molded. In its cost effective, state of the art equipment and well planned campus, 
+		   we build an atmosphere that stimulates creativity and promotes collaboration. In addition to this, there are several
+		   co-curricular activities that the students can participate in that go a long way in expanding their horizons as well
+		   as their understanding. C. U. In accomplishing this goal FEU has an integrated approach to education offering rigorous 
+		   academic instruction, work experience, great employment relations and quite an embracing engagement in the community 
+		   with much diversity and inclusion so that everyone gets to flourish.</p></b>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/school/far-eastern-university/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href=" https://x.com/fareasternu?s=21&t=UMJq9mxvFn1hsZO2mvZ6IA"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/fareasternuniversity/profilecard/?igsh=NmppaWl0MDIyN2Fx"><i class="fa-brands fa-instagram"></i></a>
+				<a href=" https://www.facebook.com/FarEasternUniversity?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+			</div>
+            <a href="file:///C:/Users/Anton/Documents/html%20codes/1.html" class="btn">View</a>
+        </div>
+    </section>
+	
+	
+	
+
+
+
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url("bldg.jpg");
+	opacity: 0.3
+	bakckground-attachment:fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #286A4D;
+    color: white;
+}
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #D4AF37;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #D4AF37;
+    border-bottom: 3px solid #D4AF37;
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #D4AF37;
+        border-bottom: 3px solid #D4AF37;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #D4AF37;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #b74b4b;
+    }
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #033E3;
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: #D4AF37;
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+	color:white;
+	background-color:rgba(102,129,89,0.7);
+	border-radius: 3px;
+	line-height: 1.8;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #D4AF37;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: black;
+    border: 0.2rem solid #D4AF37;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #D4AF37;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #D4AF37;
+    box-shadow: 0  0 25px #D4AF37;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #D4AF37;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid v;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #D4AF37;
+    color: white;
+    box-shadow: 0 0 25px #D4AF37;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "software Developer";
+    color: #D4AF37;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: #033E3;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #D4AF37;
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "BRAVE";
+    }
+    21%, 40%{
+        content: "EXCELLENT";
+    }
+    41%, 60%{
+        content: "STRONG";
+    }
+    61%, 80%{
+        content: "ACTIVE";
+    }
+    81%, 100%{
+        content: "SKILLFUL";
+    }
+}
+
+@media (max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+		
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+		
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+	
+	</style>
+</body>
+</html>
+
+
